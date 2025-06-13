@@ -54,7 +54,7 @@ OPENAI_API_KEY=sk-...
 ### 4. Run the Bot Locally
 
 ```bash
-node index.js
+npm run dev
 ```
 
 You need to expose your local server to Slack using a tool like ngrok:
@@ -73,12 +73,23 @@ https://<your-ngrok-subdomain>.ngrok.io/slack/events
 
 User in Slack:
 ```
-@bot Can you explain what JWT is?
+@bot How many issues are posted in the channel today, What's the progress of them?
 ```
 
 Bot:
 ```
-"Sure! JWT (JSON Web Token) is a compact, URL-safe means of representing claims between two parties..."
+🗓️ Date: June 13, 2025
+📌 Total Issues Reported: 3
+
+1. ✅ [Fixed] Login button unresponsive on mobile (by @saboor)  
+2. 🚧 [In Progress] Broken link in dashboard footer (assigned to @ali)  
+3. ⏳ [Pending] Add email validation in signup form (unassigned)
+
+📈 Progress:  
+- 1 Resolved  
+- 1 In Progress  
+- 1 Pending Assignment
+
 ```
 
 ## 🧪 What's Next (Coming Soon)
