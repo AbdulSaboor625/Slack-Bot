@@ -2,7 +2,7 @@ require("dotenv").config();
 const { App } = require("@slack/bolt");
 const { askClaude } = require("./claud");
 const { askOpenAI } = require("./openai");
-const { getSlackData } = require("./slack");
+const { getSlackData, getSlackUserWithId } = require("./slack");
 
 
 const app = new App({

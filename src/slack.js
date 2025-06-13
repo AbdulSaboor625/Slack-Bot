@@ -64,4 +64,4 @@ async function formatMessagesWithNames(messages) {
   
   }
 
-  module.exports = { getSlackData };
+  module.exports = { getSlackData, getSlackUserWithId };
